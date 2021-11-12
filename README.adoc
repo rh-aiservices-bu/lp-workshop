@@ -1,1 +1,1 @@
-https://rh-aiservices-bu.github.io/lp-workshop/
+https://rh-aiservices-bu.github.io/rhods-lp-workshop/lp-workshop/index.html
