@@ -46,6 +46,25 @@ image::new_notebook.png[alt text]
 
 * If you want to learn more about notebooks, head to https://jupyter.org/[this page] .
 
+
+[TIP]
+====
+There is a Keyboard Shortcut that allows you to run the cells in sequence.
+
+Can you find out what it is?
+
++++ <details><summary> +++
+Display the answer
++++ </summary><div> +++
+
+* Pressing **Shift**, followed by **Enter** will execute the current cell and move to the next one.
+* Therefore, holding **Shift** and pressing **Enter** repeatedly will run all the cells in the Notebook.
+
++++ </div></details> +++
+
+====
+
+
 Now that you're more familiar with notebooks, you're ready to xref:04-lp-recognition.adoc[go to the next section.]
 
 

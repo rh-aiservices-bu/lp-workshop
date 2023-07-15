@@ -13,6 +13,27 @@ At the end of the notebook, it will look like this:
 
 image::lpr_result.png[alt text]
 
+
+[TIP]
+====
+There is a way to display multiple notebooks side-by-side.
+
+Can you find how to do it?
+
++++ <details><summary> +++
+Display the answer
++++ </summary><div> +++
+
+* Click on the notebook **tab** (where its name is displayed)
+* Then, **drag** it to the side, or to the bottom.
+
++++ </div></details> +++
+
+====
+
+
+
+
 Once you're finished, you can come back here and xref:05-model-api.adoc[head to the next section.]
 
 

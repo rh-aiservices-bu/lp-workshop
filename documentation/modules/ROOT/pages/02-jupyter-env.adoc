@@ -34,6 +34,30 @@ image::lp_folder_click.png[alt text]
 
 image::lp_folder.png[alt text]
 
+
+[TIP]
+====
+There is another way way to clone a git repo in JupyterLab.
+
+Can you guess what it is?
+
++++ <details><summary> +++
+Display the answer
++++ </summary><div> +++
+
+* Select **File** then **New** then  **Terminal**
+* Once in the terminal, type:
+[.lines_space]
+[.console-input]
+[source,text]
+----
+git clone https://github.com/rh-aiservices-bu/licence-plate-workshop.git
+----
+
+
++++ </div></details> +++
+
+====
+
+
 xref:03-notebooks.adoc[Ready? Let's go to the next section.]
-
-

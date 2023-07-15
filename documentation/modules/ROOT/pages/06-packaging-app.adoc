@@ -5,8 +5,6 @@
 
 Now that the application code is working, we're ready to package it as a container image, and have it running directly into OpenShift as a service you will be able to call from any other application.
 
-NOTE: the application code is available in the same repo we've been using before, but in the `app` branch. It is the same content as we had in our notebooks, except that instead of passing an image name to the prediction function, we will be able to directly upload any image!
-
 == Building the application inside OpenShift
 
 * Open your OpenShift UI and switch to the developer view from the menu on the top left:
@@ -29,9 +27,13 @@ image::git_repo.png[alt text]
 
 image::app_branch.png[alt text]
 
-* Leave the other fields as default and scroll down. You will see that OpenShift automatically recognized that our repo contains Python code, and that the right base image has been selected. Pretty neat, eh?!
+* By default, OpenShift will want to use the builder image called **Python 3.9 (UBI8)**. You will want to edit the Import Strategy:
 
-image::build_image.png[alt text]
+image::edit_import_strategy.png[alt text]
+
+* The image to choose in the dropdown list is **3.8-ubi7**
+
+image::pinned_builder_image.png[alt text]
 
 * If you continue to scroll down, you will see that everything is automatically selected to create a deployment of your application, and to create a Route through which you will be able to access it. Everything is ready, so you can click on `Create`:
 
@@ -52,6 +54,27 @@ image::detail_panel.png[alt text]
 * If you scroll down on the detail panel, you will see the route that was created for your application. This is the URL you will use to send images:
 
 image::route.png[alt text]
+
+[TIP]
+====
+By default, a single replica of your deployed model is running.
+
+Can you find how to change the configuration so that 2 replicas are running simultaneously?
+
++++ <details><summary> +++
+Display the answer
++++ </summary><div> +++
+
+* Click on the Application to open the Detail panel
+* Click on the **Actions** drop-down.
+* Click on **Edit Pod count**
+* Change the number from 1 to 2
+* Click **Save**
+
++++ </div></details> +++
+
+====
+
 
 Once you're finished, you can come back here and xref:07-testing-app.adoc[head to the next section.]
 
